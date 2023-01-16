@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Fira Code", cursive;
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  background: #dce8ed;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Fira Code", cursive;
+  position: relative;
+  font-size: 29px;
+}
+
+h1:before {
+  content: url(./486-4868785_brush-stroke-orange-png-transparent-png-removebg-preview.png);
+  position: absolute;
+  display: block;
+  margin-top: -110px;
+  left: -75px;
+  z-index: -9999;
+  -webkit-animation: brush 3s 0s backwards reverse;
+  -moz-animation: brush 3s 0s backwards reverse;
+  -o-animation: brush 3s 0s backwards reverse;
+  animation: brush 3s 0s backwards reverse;
+  -webkit-mask: url(./486-4868785_brush-stroke-orange-png-transparent-png-removebg-preview.png)
+    no-repeat 0 0;
+  mask: url(./486-4868785_brush-stroke-orange-png-transparent-png-removebg-preview.png)
+    no-repeat 0 0;
+}
+
+@-webkit-keyframes brush {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 435px 0px;
+    mask-position: 435px 0px;
+  }
+}
